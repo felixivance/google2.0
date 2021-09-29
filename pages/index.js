@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import { ViewGridIcon } from '@heroicons/react/solid';
+import {   ViewGridIcon } from '@heroicons/react/solid';
+import { SearchIcon,MicrophoneIcon } from '@heroicons/react/outline';
+
 import Image from 'next/image';
 
 export default function Home() {
@@ -34,6 +36,11 @@ export default function Home() {
       <form>
         <Image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
         height={100} width={300} />
+        <div className="flex border-2 rounded-full hover:shadow-lg focus-within:shadow-lg">
+          <SearchIcon  className="w-5 mr-3 text-gray-500"/>
+          <input type="text" className=" focus:outline-none flex-1"/>
+          <MicrophoneIcon className="w-5 ml-3 text-gray-500"/>
+        </div>
       </form>
 
       {/* footer */}
