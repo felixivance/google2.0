@@ -21,8 +21,10 @@ export default function Home() {
           
           {/* icon */}
           {/* image */}
-          <img loading="lazy" src="https://lh3.googleusercontent.com/a-/AOh14GjkbYYp7lahAZhwF2jCOwBnPjXXYZhGNfuvvi9O8dQ=s96-c"
-          width="40" height="50" className="rounded-full" />
+          <div className="p-1 bg-blue-500 rounded-full">
+            <img loading="lazy" src="https://lh3.googleusercontent.com/a-/AOh14GjkbYYp7lahAZhwF2jCOwBnPjXXYZhGNfuvvi9O8dQ=s96-c"
+            width="35" height="50" className="rounded-full" />
+          </div>
         </div>
       </header>
       {/* body */}
