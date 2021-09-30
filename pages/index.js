@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col justify-center h-screen">
       <Head>
         <title>Google 2.0 AKA Foogle</title>
         <link rel="icon" href="/favicon.ico" />
@@ -33,17 +33,26 @@ export default function Home() {
         </div>
       </header>
       {/* body */}
-      <form>
+      <form className="flex flex-col items-center mt-44 flex-grow  ">
         <Image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-        height={100} width={300} />
-        <div className="flex border-2 rounded-full hover:shadow-lg focus-within:shadow-lg">
-          <SearchIcon  className="w-5 mr-3 text-gray-500"/>
-          <input type="text" className=" focus:outline-none flex-1"/>
-          <MicrophoneIcon className="w-5 ml-3 text-gray-500"/>
+        height={66} width={200}   />
+        <div className="flex border rounded-full hover:shadow-lg focus-within:shadow-lg max-w-md px-5 py-3 items-center 
+        md:max-w-xl lg:max-w-2xl  mt-2 w-3/4">
+          <SearchIcon  className="h-5 mr-3 text-gray-500"/>
+          <input type="text" className="flex-1 focus:outline-none "/>
+          <MicrophoneIcon className="h-5 ml-3 text-gray-500"/>
+        </div>
+        <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 
+        sm:flex-row sm:space-x-4">
+          <button className="searchButton">Google Search</button>
+          <button className="searchButton">I'm Feeling Lucky</button>
         </div>
       </form>
 
       {/* footer */}
+        <div>
+          <p>Kenya</p>
+        </div>
 
       {/* mini footer */}
 

@@ -7,4 +7,8 @@
         @apply hover:text-blue-500 cursor-pointer hover:scale-110 
         hover:underline
     }
+    .searchButton{
+        @apply rounded-md bg-[#f8f9fa] p-2 text-sm cursor-pointer ring-gray-200
+        text-gray-800 hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md
+    }
 }
