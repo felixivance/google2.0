@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {   ViewGridIcon } from '@heroicons/react/solid';
+import {   GlobeIcon, ViewGridIcon } from '@heroicons/react/solid';
 import { SearchIcon,MicrophoneIcon } from '@heroicons/react/outline';
 
 import Image from 'next/image';
@@ -50,8 +50,28 @@ export default function Home() {
       </form>
 
       {/* footer */}
-        <div>
-          <p>Kenya</p>
+        <div className="grid w-full divide-y-[1px] divide-gray-300 bg-gray-100
+        text-sm text-gray-500">
+          <div className="px-8 py-3">
+            <p>Kenya</p>
+            <p></p>
+          </div>
+          <div className="grid grid-cols-1">
+            <div className="flex justify-center">
+              <GlobeIcon className="h-5 mr-1 text-green-700" />
+              <p>Carbon Neurtal Since 2007 </p>
+            </div>
+            <div className="flex justify-center space-x-8 whitespace-nowrap">
+              <p>Advertising</p>
+              <p>Business</p>
+              <p>Now Search Works</p>
+            </div>
+            <div className="flex justify-center space-x-8 whitespace-nowrap">
+              <p>Privacy</p>
+              <p>Terms</p>
+              <p>Settings</p>
+            </div>
+          </div>
         </div>
 
       {/* mini footer */}
