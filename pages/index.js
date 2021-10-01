@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </header>
       {/* body */}
-      <form className="flex flex-col items-center mt-44 flex-grow  ">
+      <form className="flex flex-col items-center mt-44 flex-grow  mb-20">
         <Image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
         height={66} width={200}   />
         <div className="flex border rounded-full hover:shadow-lg focus-within:shadow-lg max-w-md px-5 py-3 items-center 
