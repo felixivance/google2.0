@@ -4,10 +4,15 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRef } from 'react';
 import HeaderOptions from '../components/HeaderOptions';
+import Response from '../response';
+import SearchResults from './SearchResults';
 
-function Search() {
+function Search({results}) {
     const router = useRouter();
     const searchInputRef = useRef("");
+
+    console.log("resutls in search");
+    console.log(results);
 
     const search =(e)=>{
         e.preventDefault();
@@ -20,7 +25,7 @@ function Search() {
     return (
         <div>
             <Head>
-                <title>Search Results </title>
+                <title>{router.query.term} - Google Search </title>
             </Head>
 
             {/* header */}
@@ -54,8 +59,30 @@ function Search() {
                <HeaderOptions />
            </header>
             {/* results */}
+            <SearchResults results ={results} />
         </div>
     )
 }
 
 export default Search
+
+
+export async function getServerSideProps(context){
+    const useDummyData = true;
+    const startIndex = context.query.start || "0";
+
+    // const data = await fetch(`https://customsearch.googleapis.com/customsearch/v1?
+    // key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${context.query.term}`)
+    // .then(response=>response.json());
+
+    const data = useDummyData ? Response : await fetch(`https://customsearch.googleapis.com/customsearch/v1?cx=${process.env.CONTEXT_KEY}&q=${context.query.term}&key=${process.env.API_KEY}&start=${startIndex}`)
+    .then(response=>response.json());
+
+    //after server has rendered, pass the results to the client
+
+    return {
+        props:{
+            results: data
+        }
+    }
+}
