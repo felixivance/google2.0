@@ -3,6 +3,7 @@ import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useRef } from 'react';
+import HeaderOptions from '../components/HeaderOptions';
 
 function Search() {
     const router = useRouter();
@@ -50,7 +51,7 @@ function Search() {
                     
               </div>
              
-               
+               <HeaderOptions />
            </header>
             {/* results */}
         </div>
