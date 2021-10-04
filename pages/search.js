@@ -1,4 +1,4 @@
-import { XIcon } from '@heroicons/react/solid';
+import { MicrophoneIcon, XIcon } from '@heroicons/react/solid';
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -7,6 +7,7 @@ import { useRef } from 'react';
 function Search() {
     const router = useRouter();
     const searchInputRef = useRef("");
+    
     return (
         <div>
             <Head>
@@ -25,7 +26,8 @@ function Search() {
                     <input type="text" ref={searchInputRef} className="flex flex-1 w-full focus:outline-none"/>
 
                     <XIcon className="cursor-pointer h-7 text-gray-500 transition duration-100 transform 
-                    hover:scale-125"/>
+                    hover:scale-125 sm:m-3" onClick={()=>searchInputRef.current.value=""}/>
+                    <MicrophoneIcon className="h-6 text-blue-500" />
                 </form>
                
            </header>
