@@ -16,7 +16,7 @@ function SearchResults({results}) {
                             </h2>
                         </a>
                      </div>
-                     <p>{results.snippet}</p>
+                     <p className="line-clamp-2">{results.snippet}</p>
                  </div>
              ))}
         </div>
