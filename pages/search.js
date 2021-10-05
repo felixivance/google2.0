@@ -2,7 +2,7 @@ import { MicrophoneIcon, SearchIcon, XIcon } from '@heroicons/react/solid';
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import HeaderOptions from '../components/HeaderOptions';
 import Response from '../response';
 import SearchResults from './SearchResults';
@@ -10,6 +10,7 @@ import SearchResults from './SearchResults';
 function Search({results}) {
     const router = useRouter();
     const searchInputRef = useRef("");
+    const [searchInput, setSearchInput] = useState(router.query.term)
 
     console.log("resutls in search");
     console.log(results);
@@ -38,7 +39,7 @@ function Search({results}) {
 
                     <form className="flex flex-grow border border-gray-200 rounded-full shadow-lg max-w-3xl items-center
                     px-6 py-2 ml-10 mr-5">
-                        <input type="text" ref={searchInputRef} className="flex flex-1 w-full focus:outline-none"/>
+                        <input type="text" ref={searchInputRef} placeholder={searchInput} className="flex flex-1 w-full focus:outline-none"/>
 
                         <XIcon className="cursor-pointer h-5 text-gray-500 transition duration-100 transform 
                         hover:scale-125 sm:m-3" onClick={()=>searchInputRef.current.value=""}/>
@@ -68,7 +69,7 @@ export default Search
 
 
 export async function getServerSideProps(context){
-    const useDummyData = true;
+    const useDummyData = true; //change here to use live search
     const startIndex = context.query.start || "0";
 
     // const data = await fetch(`https://customsearch.googleapis.com/customsearch/v1?
