@@ -39,7 +39,7 @@ function Search({results}) {
 
                     <form className="flex flex-grow border border-gray-200 rounded-full shadow-lg max-w-3xl items-center
                     px-6 py-2 ml-10 mr-5">
-                        <input type="text" ref={searchInputRef} placeholder={searchInput} className="flex flex-1 w-full focus:outline-none"/>
+                        <input type="text" ref={searchInputRef} placeholder={searchInput} defaultValue={router.query.term} className="flex flex-1 w-full focus:outline-none"/>
 
                         <XIcon className="cursor-pointer h-5 text-gray-500 transition duration-100 transform 
                         hover:scale-125 sm:m-3" onClick={()=>searchInputRef.current.value=""}/>
