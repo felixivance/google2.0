@@ -12,14 +12,14 @@ Google Results page with search built with tailwind and nextjs.
 ```
 
 > Screenshots
-<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/1.png"  height="500" width="500" >
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/1.png"  height="500" width="900" >
 <br>
 <img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/2.png"  height="500" width="500" >
 <br>
-<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/3.png"  height="500" width="500" >
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/3.png"  height="500" width="900" >
 <br>
-<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/4.png"  height="500" width="500" >
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/4.png"  height="390" width="280" >
 <br>
-<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/5.png"  height="500" width="500" >
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/5.png"  height="390" width="280" >
 <br>
-<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/6.png"  height="500" width="500" >
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/6.png"  height="390" width="280" >
