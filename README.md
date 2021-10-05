@@ -11,5 +11,15 @@ Google Results page with search built with tailwind and nextjs.
 
 ```
 
-Screenshots
-<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/1.png"  align="left" height="200" width="200" >
+> Screenshots
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/1.png"  height="500" width="500" >
+<br>
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/2.png"  height="500" width="500" >
+<br>
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/3.png"  height="500" width="500" >
+<br>
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/4.png"  height="500" width="500" >
+<br>
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/5.png"  height="500" width="500" >
+<br>
+<img src="https://raw.githubusercontent.com/felixivance/google2.0/master/public/screenshots/6.png"  height="500" width="500" >
