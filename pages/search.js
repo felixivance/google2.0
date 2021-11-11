@@ -12,8 +12,7 @@ function Search({results}) {
     const searchInputRef = useRef("");
     const [searchInput, setSearchInput] = useState(router.query.term)
 
-    console.log("resutls in search");
-    console.log(results);
+    
 
     const search =(e)=>{
         e.preventDefault();
@@ -69,7 +68,7 @@ export default Search
 
 
 export async function getServerSideProps(context){
-    const useDummyData = true; //change here to use live search
+    const useDummyData = false; //change here to use live search
     const startIndex = context.query.start || "0";
 
     // const data = await fetch(`https://customsearch.googleapis.com/customsearch/v1?
