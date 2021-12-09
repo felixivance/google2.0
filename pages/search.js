@@ -12,8 +12,6 @@ function Search({results}) {
     const searchInputRef = useRef("");
     const [searchInput, setSearchInput] = useState(router.query.term)
 
-    
-
     const search =(e)=>{
         e.preventDefault();
         const term = searchInputRef.current.value;
